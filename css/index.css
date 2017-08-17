@@ -1,0 +1,699 @@
+.hide {
+    display: none;
+}
+/*背景类+箭头动态效果---------------------------------------------------------------------------*/
+*{ margin:0; padding:0;}
+/*暂时*/
+
+/*暂时*/
+img{border: 0px;}
+#main{ width:640px; height:960px; position:absolute; overflow:hidden;}
+#list{}
+#list > li{ width:100%; height:100%; position:absolute; left:0; top:0; background-size:cover; display:none; z-index:5;}
+#list > li.zIndex{ z-index:6;}
+#list > li:nth-of-type(1){ background-image: url("../img/p1.jpg");  display:block;}/*第01页*/
+#list > li:nth-of-type(2){ background-image: url("../img/p2.jpg"); }/*第02页*/
+#list > li:nth-of-type(3){ background-image: url("../img/ttl0(1).jpg"); }/*第03页*/
+#list > li:nth-of-type(4){ background-image: url("../img/ttl0(1).jpg"); }/*第04页*/
+#list > li:nth-of-type(5){ background-image: url("../img/ttl0(1).jpg"); } /*第05页*/
+#list > li:nth-of-type(6){ background-image: url("../img/p2.jpg"); }        /*第06页*/
+#list > li:nth-of-type(7){ background-image: url("../img/p2.jpg"); }        /*第07页*/
+#list > li:nth-of-type(8){ background-image: url("../img/p5-2.jpg"); }    /*第08页*/
+/*音乐+旋转效果------------------------------------------------------------------------------------------------------*/
+#music{ width:50px; height:50px; background:url(../img/music_note_big.png) no-repeat; background-size:cover; position:absolute; top:20px; right:20px; z-index:8;}
+#music.active{ animation:1s linear infinite musicMove; -webkit-animation:1s linear infinite musicMove;}
+@keyframes musicMove{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(360deg);}
+}
+@-webkit-keyframes musicMove{
+    0%{ -webkit-transform:rotate(0deg);}
+    100%{ -webkit-transform:rotate(360deg);}
+}
+/*音乐+旋转效果------------------------------------------------------------------------------------------------------*/
+/*箭头动效---------------------------------------------------------------------------*/
+.arrow{ width:50px;
+    height:20px;
+    background:url(../img/arrr.png) no-repeat;
+    background-size: cover;
+    position:absolute;
+    left:53.4%; bottom:-2px;
+    margin-left:-50px;
+    z-index:8;
+    animation:1s infinite arrowMove;
+    -webkit-animation:1s infinite arrowMove;}
+@keyframes arrowMove{
+    0%{ opacity:0; transform:translate(0,0);}
+    50%{ opacity:2.2; transform:translate(0,-30px);}
+    100%{ opacity:0; transform:translate(0,-50px);}
+}
+@-webkit-keyframes arrowMove{
+    0%{ opacity:0; -webkit-transform:translate(0,0);}
+    50%{ opacity:2.2; -webkit-transform:translate(0,-30px);}
+    100%{ opacity:0; -webkit-transform:translate(0,-50px);}
+}
+/*箭头动效---------------------------------------------------------------------------*/
+
+/*背景类+箭头动态效果---------------------------------------------------------------------------*/
+body{
+    width:100%;
+    overflow:hidden;
+}
+.page{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+/*第01页元素--------------------------------------------------------------------------*/
+/*0*/
+/*第01页元素-end--------------------------------------------------------------------------*/
+
+/*第02页元素--------------------------------------------------------------------------*/
+.page-2-1 .tu1{
+    width: 231px;
+    height: 29px;
+    position: absolute;
+    left: 206px;
+    top: 206px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 0.2s  ease forwards;
+}
+.page-2-1 .tu2{
+    width: 139px;
+    height: 26px;
+    position: absolute;
+    left: 244px;
+    top: 334px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 0.6s  ease forwards;
+}
+.page-2-1 .tu3{
+    width: 233px;
+    height: 26px;
+    position: absolute;
+    left: 204px;
+    top: 408px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 1s  ease forwards;
+}
+.page-2-1 .tu4{
+    width: 182px;
+    height: 26px;
+    position: absolute;
+    left: 232px;
+    top: 480px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 1.4s  ease forwards;
+}
+.page-2-1 .tu5{
+    width: 392px;
+    height: 27px;
+    position: absolute;
+    left: 124px;
+    top: 558px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 1.8s  ease forwards;
+}
+.page-2-1 .tu6{
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    left: 270px;
+    top: 742px;
+    z-index: 9;
+    opacity: 0;-webkit-animation:myshan 2s 2.2s  ease forwards;
+}
+.page-2-1 .tu7{
+    width: 312px;
+    height: 29px;
+    position: absolute;
+    left: 166px;
+    top: 799px;
+    z-index: 9;
+    opacity: 0;
+    -webkit-animation:myfang 2s 2.6s  ease forwards;
+}
+/*动效*/
+@-webkit-keyframes myshan {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes myfang {
+    0% {opacity:0;-webkit-transform: scale(0.5,0.5);}
+    50%{opacity:1;-webkit-transform: scale(1.3,1.3);}
+    100%{opacity:1;-webkit-transform: scale(1,1);}
+}
+
+/*#dowebok {*/
+/*-webkit-animate-duration: 26s;    *//*//动画持续时间*/
+/*-webkit-animate-delay: 30s;    *//*//动画延迟时间*/
+/*-webkit-animate-iteration-count: l;    *//*//动画执行次数*/
+/*}*/
+
+
+/*第二页JQ动效*/
+/*第02页-end--------------------------------------------------------------------------*/
+
+/*第03页--------------------------------------------------------------------------*/
+/*.page-3-1 .ttl{*/
+    /*width: 258px;*/
+    /*height: 50px;*/
+    /*position: absolute;*/
+    /*left: 191px;*/
+    /*top: 94px;*/
+    /*z-index: 9999999;*/
+/*}*/
+.page-3-1 .tu1{
+    width: 380px;
+    height: 119px;
+    position: absolute;
+    left: -380px;
+    top: 182px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myleft 1.2s forwards 1;
+}
+.page-3-1 .tu2{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 340px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.4s forwards 1;
+}
+.page-3-1 .tu3{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 498px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.8s forwards 1;
+}
+.page-3-1 .tu4{
+    width: 380px;
+    height: 113px;
+    position: absolute;
+    left: -380px;
+    top: 640px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 1.2s forwards 1;
+}
+.page-3-1 .tu5{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 264px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s forwards 1;
+}
+.page-3-1 .tu6{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 408px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.4s forwards 1;
+}
+.page-3-1 .tu7{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 565px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.8s forwards 1;
+}
+.page-3-1 .tu8{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 714px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 1.2s forwards 1;
+    /*-moz-animation:mymove 5s infinite; *//* Firefox */
+    /*-webkit-animation:mymove 5s infinite; *//* Safari and Chrome */
+    /*-o-animation:mymove 5s infinite; *//* Opera */
+}
+    .page-3-1 .tu9{
+        width: 374px;
+        height: 119px;
+        position: absolute;
+        left: -380px;
+        top: 778px;
+        z-index: 99999999999999999;
+        -webkit-animation: myleft 1.2s 1.6s forwards 1;
+    }
+
+@-webkit-keyframes myleft
+{
+    from {left:-380px;opacity: 0;}
+    to {left:80px;opacity: 1;}
+}
+@-webkit-keyframes myright
+{
+    from {right:-374px;opacity: 0;}
+    to {right:80px;opacity: 1;}
+}
+/*第03页素-end--------------------------------------------------------------------------*/
+
+
+/*第04页素--------------------------------------------------------------------------*/
+/*.page-4-1 .ttl{*/
+    /*width: 258px;*/
+    /*height: 50px;*/
+    /*position: absolute;*/
+    /*left: 191px;*/
+    /*top: 94px;*/
+    /*z-index: 9999999;*/
+/*}*/
+.page-4-1 .tu1{
+    width: 380px;
+    height: 119px;
+    position: absolute;
+    left: -380px;
+    top: 182px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myleft 1.2s forwards  1;
+}
+.page-4-1 .tu2{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 340px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.4s forwards 1;
+}
+.page-4-1 .tu3{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 490px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.8s forwards 1;
+}
+.page-4-1 .tu4{
+    width: 380px;
+    height: 113px;
+    position: absolute;
+    left: -380px;
+    top: 640px;
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 1.2s forwards 1;
+}
+.page-4-1 .tu5{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 264px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s forwards  1;
+}
+.page-4-1 .tu6{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 425px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.4s forwards 1;
+}
+.page-4-1 .tu7{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 573px;  /*564*/
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.8s forwards 1;
+}
+.page-4-1 .tu8{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 718px;
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 1.2s forwards 1;
+    /*-moz-animation:mymove 5s infinite; *//* Firefox */
+    /*-webkit-animation:mymove 5s infinite; *//* Safari and Chrome */
+    /*-o-animation:mymove 5s infinite; *//* Opera */
+}
+/*.page-4-1 .tu9{*/
+    /*width: 374px;*/
+    /*height: 119px;*/
+    /*position: absolute;*/
+    /*left: -380px;*/
+    /*top: 804px;*/
+    /*z-index: 99999999999999999;*/
+    /*-webkit-animation: myleft 1.2s 1.6s forwards 1;*/
+/*}*/
+/*-moz-animation:mymove 5s infinite; *//* Firefox */
+/*-webkit-animation:mymove 5s infinite; *//* Safari and Chrome */
+/*-o-animation:mymove 5s infinite; *//* Opera */
+
+/*@-webkit-keyframes myleft {*/
+/*0%{left:-380px;}*/
+/*100%{left:80px;}*/
+/*}*/
+/*@-webkit-keyframes myright {*/
+/*0%{right:-374px;}*/
+/*100%{right:80px;}*/
+/*}*/
+
+/*第04页素-end--------------------------------------------------------------------------*/
+
+/*第05页--------------------------------------------------------------------------*/
+.page-5-1 .tu1{
+    width: 380px;
+    height: 119px;
+    position: absolute;
+    left: -380px;
+    top: 218px;/*182*/
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myleft 1.2s forwards  1;
+}
+.page-5-1 .tu2{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 372px;/*340*/
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.4s forwards 1;
+}
+.page-5-1 .tu3{
+    width: 380px;
+    height: 114px;
+    position: absolute;
+    left: -380px;
+    top: 522px;/*490*/
+    /*z-index: 999999999999999999;*/
+    -webkit-animation: myleft 1.2s 0.8s forwards 1;
+}
+/*.page-5-1 .tu4{*/
+    /*width: 380px;*/
+    /*height: 113px;*/
+    /*position: absolute;*/
+    /*left: -380px;*/
+    /*top: 640px;*/
+    /*z-index: 999999999999999999;*/
+    /*-webkit-animation: myleft 1.2s 1.2s forwards 1;*/
+/*}*/
+.page-5-1 .tu5{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 296px;/*264*/
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s forwards  1;
+}
+.page-5-1 .tu6{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 448px;/*415*/
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.4s forwards 1;
+}
+.page-5-1 .tu7{
+    width: 374px;
+    height: 119px;
+    position: absolute;
+    right: -374px;
+    top: 600px;  /*573*/
+    /*z-index: 99999999999999999;*/
+    -webkit-animation: myright 1.2s 0.8s forwards 1;
+}
+/*.page-5-1 .tu8{*/
+    /*width: 374px;*/
+    /*height: 119px;*/
+    /*position: absolute;*/
+    /*right: -374px;*/
+    /*top: 718px;*/
+    /*z-index: 99999999999999999;*/
+    /*-webkit-animation: myright 1.2s 1.2s forwards 1;*/
+/*}*/
+/*.page-5-1 .tu9{*/
+    /*width: 374px;*/
+    /*height: 119px;*/
+    /*position: absolute;*/
+    /*left: -380px;*/
+    /*top: 804px;*/
+    /*z-index: 99999999999999999;*/
+    /*-webkit-animation: myleft 1.2s 1.6s forwards 1;*/
+/*}*/
+/*-moz-animation:mymove 5s infinite; *//* Firefox */
+/*-webkit-animation:mymove 5s infinite; *//* Safari and Chrome */
+/*-o-animation:mymove 5s infinite; *//* Opera */
+
+
+/*@-webkit-keyframes myleft {*/
+/*0%{left:-380px;}*/
+/*100%{left:80px;}*/
+/*}*/
+/*@-webkit-keyframes myright {*/
+/*0%{right:-374px;}*/
+/*100%{right:80px;}*/
+/*}*/
+
+/*@-webkit-keyframes myleft*/
+/*{*/
+    /*from {left:-380px;}*/
+    /*to {left:80px;}*/
+/*}*/
+/*@-webkit-keyframes myright*/
+/*{*/
+    /*from {right:-374px;}*/
+    /*to {right:80px;}*/
+/*}*/
+/*第05页-end--------------------------------------------------------------------------*/
+
+/*第06页--------------------------------------------------------------------------*/
+.page-6-1 .tu1{
+    width: 640px;
+    height:1008px;
+    position: absolute;
+    left:0;
+    bottom: 0;/*+*/
+    top:1008px;
+    z-index: 999999999999999;
+    -webkit-animation: myxian 0.6s 0.2s forwards 1;
+}
+
+@-webkit-keyframes myxian
+{
+    from {top:1008px;opacity: 0;}
+    to {top:0px;opacity: 1;}
+}
+
+/*@-webkit-keyframes myxian {*/
+    /*0% {top:1008px;}*/
+    /*100%{top:0;}*/
+/*}*/
+/*第06页-end--------------------------------------------------------------------------*/
+
+
+/*第07页-------------------------------------------------------------------------*/
+.page-7-1 .tu1{
+    width: 640px;
+    height:1008px;
+    position: absolute;
+    left:0;
+    bottom: 0;/*+*/
+    top:1008px;
+    z-index: 99999999999999999;
+    -webkit-animation: myxian 0.6s 0.2s forwards 1;
+}
+/*第07页-end--------------------------------------------------------------------------*/
+
+/*第08页--------------------------------------------------------------------------*/
+.page-8-1 .tu2{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:235px;
+    top:615px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5);
+    -webkit-animation: mypaoT 2s  infinite ease-in;
+}
+.page-8-1 .tu3{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:185px;
+    top:615px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5);
+    -webkit-animation: mypaoT 2s 1s infinite ease-in;
+}
+.page-8-1 .tu6{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:151px;
+    top:600px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5) rotate(270deg);
+    -webkit-animation: mypaoL 2s .6s infinite ease-in;
+}
+.page-8-1 .tu7{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:151px;
+    top:640px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5) rotate(270deg);
+    -webkit-animation: mypaoL 2s 1.6s infinite ease-in;
+}
+.page-8-1 .tu10{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:235px;
+    top:640px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(1,1) rotate(180deg);
+    -webkit-animation: mypaoB 2s .8s infinite ease-in;
+}
+.page-8-1 .tu11{
+    width:206px;
+    height:252px;
+    position: absolute;
+    left:185px;
+    top:640px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(1,1) rotate(180deg);
+    -webkit-animation: mypaoB 2s 1.8s infinite ease-in;
+}
+
+.page-8-1 .tu13{
+    width:206px;
+    height:252px;
+    position: absolute;
+    right:151px;
+    top:600px;
+    z-index: 99999999999999999;
+    opacity:0;
+    -webkit-transform: scale(1,1) rotate(90deg);
+    -webkit-animation: mypaoR 2s .6s infinite ease-in;
+}
+.page-8-1 .tu14{
+    width:206px;
+    height:252px;
+    position: absolute;
+    right:151px;
+    top:640px;
+    z-index: 99999999999999999;
+    opacity: 0;
+    -webkit-transform: scale(1,1) rotate(90deg);
+    -webkit-animation: mypaoR 2s 1.6s infinite ease-in;
+}
+.page-8-1 .tu99{
+    width: 290px;
+    height: 267px;
+    position: absolute;
+    left: 175px;
+    top:600px;
+    z-index: 99999999999999999;
+}
+@-webkit-keyframes myshow {
+    0% {opacity: 0;}
+    99%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes mypaoT {
+    100% {top:615px;-webkit-transform: scale(1,1);opacity:0.05;}
+    20%{opacity:1;}
+    0%{top:510px;-webkit-transform: scale(0.5,0.5);opacity: 0;}
+}
+@-webkit-keyframes mypaoL {
+    0% {left:140px;-webkit-transform: scale(1,1) rotate(270deg);opacity:0;}
+    30%{opacity:1;}
+    100%{left:151px;-webkit-transform: scale(0.5,0.5) rotate(270deg);opacity: 0;}
+}
+@-webkit-keyframes mypaoB {
+    0% {top:690px;-webkit-transform: scale(1,1) rotate(180deg);opacity:0;}
+    40%{opacity:1;}
+    100%{top:640px;-webkit-transform: scale(0.5,0.5) rotate(180deg);opacity: 0;}
+}
+@-webkit-keyframes mypaoR {
+    0% {right:140px;-webkit-transform: scale(1,1) rotate(90deg);opacity:0;}
+    30%{opacity:1;}
+    100%{right:151px;-webkit-transform: scale(0.5,0.5) rotate(90deg);opacity: 0;}
+}
+
+/*背景泡泡*/
+.pao{
+    width:400px;
+    height:410px;
+    position: absolute;
+    left:115px;
+    top:548px;
+    z-index: 99999999999999999;
+    opacity: 1;
+    -webkit-animation: myone 2s 1 forwards ease-in;
+}
+@-webkit-keyframes myone {
+    0%{-webkit-transform: scale(1,1);opacity: 1;}
+    100% {-webkit-transform: scale(0.5,0.5);opacity:0;}
+}
+/*背景泡泡*/
+
+.page-8-1 .tu6anniu{
+    width: 290px;
+    height: 267px;
+    position: absolute;
+    left: 175px;
+    top:600px;
+    z-index: 99999999999999999;
+}
+/*第08页-end--------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

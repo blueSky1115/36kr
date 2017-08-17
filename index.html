@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=640,user-scalable=no,target-densityDpi=device-dpi">
+<title>36Kr</title>
+<link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+<div id="main">
+	<ul id="list">
+    	<li class="page page-1-1 page-current">
+            <ul>
+                <li>
+                <div class="arrow"></div>
+                </li>
+            </ul>
+    	</li>
+        <li class="page page-2-1 hide ">
+            <ul>
+                <li>
+                    <img class="tu1" id="a" src="img/0101-01.png"/>
+                    <img class="tu2" id="b" src="img/0101-02.png" />
+                    <img class="tu3" id="c" src="img/0101-03.png" />
+                    <img class="tu4" id="d"src="img/0101-04.png" />
+                    <img class="tu5" id="e" src="img/0101-05.png" />
+                    <img class="tu6" id="f" src="img/0101-06.png"/>
+                    <img class="tu7 " src="img/yellow.png"/>
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="page page-3-1 hide">
+            <ul>
+                <li>
+                    <!--<img src="img/ttl0.png" class="ttl"/>-->
+                    <img src="img/L1-1.png" class="tu1"/>
+                    <img src="img/R1-1.png" class="tu5"/>
+                    <img src="img/L1-2.png" class="tu2"/>
+                    <img src="img/R1-2.png" class="tu6"/>
+                    <img src="img/L1-3.png" class="tu3"/>
+                    <img src="img/R1-3.png" class="tu7"/>
+                    <img src="img/L1-4.png" class="tu4"/>
+                    <img src="img/R1-4.png" class="tu8"/>
+                    <img src="img/L1-5.png" class="tu9"/>
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="page page-4-1 hide">
+            <ul>
+                <li>
+                    <img src="img/L2-1.png" class="tu1"/>
+                    <img src="img/R2-1.png" class="tu5"/>
+                    <img src="img/L2-2.png" class="tu2"/>
+                    <img src="img/R2-2.png" class="tu6"/>
+                    <img src="img/L2-3.png" class="tu3"/>
+                    <img src="img/R2-3.png" class="tu7"/>
+                    <img src="img/L2-4.png" class="tu4"/>
+                    <img src="img/R2-4.png" class="tu8"/>
+                    <!--<img src="img/i5.png" class="tu9"/>-->
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="page page-5-1 hide">
+            <ul>
+                <li>
+                    <img src="img/L3-1.png" class="tu1"/>
+                    <img src="img/R3-1.png" class="tu5"/>
+                    <img src="img/L3-2.png" class="tu2"/>
+                    <img src="img/R3-2.png" class="tu6"/>
+                    <img src="img/L3-3.png" class="tu3"/>
+                    <img src="img/R3-3.png" class="tu7"/>
+                    <!--<img src="img/L2-4.png" class="tu4"/>-->
+                    <!--<img src="img/r2-4.png" class="tu8"/>-->
+                    <!--<img src="img/L2-5.png" class="tu9"/>-->
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="page page-6-1 hide">
+            <ul>
+                <li>
+                    <img src="img/text1.png" class="tu1"/>
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="page page-7-1 hide">
+            <ul>
+                <li>
+                    <img src="img/text2.png" class="tu1"/>
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+        </li>
+       <li class="page page-8-1 hide">
+           <ul>
+               <li>
+                   <img class="pao" src="img/paopao.png" />
+                   <img class="tu2" src="img/pao.png" />
+                   <img class="tu3" src="img/pao.png" />
+                   <img class="tu6" src="img/pao.png" />
+                   <img class="tu7" src="img/pao.png" />
+                   <img class="tu10" src="img/pao.png" />
+                   <img class="tu11" src="img/pao.png" />
+                   <img class="tu13" src="img/pao.png" />
+                   <img class="tu14" src="img/pao.png" />
+                   <a href="http://wise.36kr.com/"><img class="tu6anniu" src="img/btn.png" /></a>
+                   <div class="arrow"></div>
+               </li>
+           </ul>
+       </li>
+    </ul>
+    <div id="sound_image"></div>
+    <div id="music">
+        <audio id="audio1" src="img/music.mp3" preload="auto" loop></audio>
+    </div>
+</div>
+</body>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="http://www.ei-marketing.cn/weixin/static/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="http://www.ei-marketing.cn/weixin/static/js/wechat.js"></script>
+<script type="text/javascript" src="http://www.ei-marketing.cn:8080/weixin/jsapiTicket.do"></script>
+<script type="text/javascript">
+    var _wx = wxconfig("wx0a977c364018150d", jsapi_ticket, false);
+    _wx.share("WISE2.0 36氪创业生态大会邀请函", "http://www.ei-marketing.cn/36kr-05page-x-5",
+            "http://www.ei-marketing.cn/36kr-05page-x-5/img/share.png", "WISE2.0                                     36氪创业生态大会                                     邀请函");
+</script>
+</html>
